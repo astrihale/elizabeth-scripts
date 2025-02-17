@@ -1,0 +1,20 @@
+{
+  "name": "elizabeth-scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "./node_modules/nodemon/bin/nodemon.js -e ts --exec \"npm run build; npm start\""
+  },
+  "dependencies": {
+    "kafkajs": "^2.2.4"
+  },
+  "devDependencies": {
+    "@types/kafkajs": "^1.8.2",
+    "nodemon": "^3.1.9",
+    "typescript": "^5.5.3"
+  },
+  "private": true
+}
